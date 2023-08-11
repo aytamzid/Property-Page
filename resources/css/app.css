@@ -1,0 +1,84 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer utilities {
+  .font-inter {
+    font-family: "DM Sans", sans-serif;
+    font-family: "Inter", sans-serif;
+  }
+
+  .font-leitura {
+    font-family: "LeituraTwo";
+    font-style: normal;
+    font-weight: 700;
+    /* line-height: 110%; */
+    font-display: swap;
+    src: url(https://d3pwy8zpzua7yi.cloudfront.net/fonts/LeituraTwo-Bold.b65a374.woff2)
+      format("woff2");
+  }
+
+  .accordion {
+    cursor: pointer;
+    width: 100%;
+    border: none;
+    text-align: left;
+    outline: none;
+    transition: 1s;
+  }
+
+  .accordion:after, .nav:after {
+    content: "\276F";
+    color: #202020;
+    font-weight: bold;
+    float: right;
+    margin-left: 5px;
+    rotate: 90deg;
+    transition: 1s;
+  }
+
+  .active:after {
+    content: "\276F";
+    rotate: -90deg;
+  }
+
+  .panel {
+    position: relative;
+    z-index: 5;
+    top: 0;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.7s ease;
+    display: flex;
+    flex-direction: column;
+  }
+
+
+  #sidebarWrap {
+    height: auto;
+    width: 210px;
+    float: right;
+    position: relative;
+    box-shadow: none;
+    border: none;
+    margin: 0;
+    padding: 0;
+    top: -90px;
+  }
+
+  #footer {
+    clear: both;
+    margin: 10px 0;
+  }
+
+  #sidebar {
+    width: 200px;
+    height: 300px;
+    position: absolute;
+  }
+
+  #sidebar.fixed {
+    position: fixed;
+    top: 0;
+  }
+}
