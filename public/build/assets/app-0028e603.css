@@ -1444,7 +1444,10 @@ video {
     .xl\:block {
         display: block
     }
-
+    .active:after {
+        content: "\276F";
+        rotate: -90deg;
+      }
     .xl\:flex {
         display: flex
     }
