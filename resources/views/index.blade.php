@@ -15,6 +15,8 @@
     <script nomodule src={{ asset('https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js') }}></script>
     <script src={{ asset('https://cdnjs.cloudflare.com/ajax/libs/Glide.js/3.0.2/glide.js') }}></script>
     @vite('resources/css/app.css')
+    {{-- <script src={{ asset('build/assets/app-0d91dc04.js') }}></script> --}}
+    <link rel="stylesheet" href={{ asset('build/assets/app-0028e603.css') }}>
 </head>
 
 <body>
@@ -99,10 +101,11 @@
       </div>
 
     <!-- Slider -->
-    <div class="relative h-[340px] border bg-cover bg-no-repeat md:h-[560px] lg:h-[720px] xl:h-[930px]" style="background-image: url('https://cdn.lecollectionist.com/__lecollectionist__/production/houses/6499/photos/ftWKjxLQjmRqoZWuvKgY_451d5cba-e310-4b06-9e9c-2b72d6f1d189.jpg');">
-        <button>
-          <div class="font-inter absolute bottom-4 left-4 h-max w-max rounded-md bg-[#202020CC] px-4 py-3.5 text-sm text-white">View all photos (29)</div>
-        </button>
+    <div class="relative overflow-hidden h-[340px] border bg-cover bg-no-repeat md:h-[560px] lg:h-[720px]">
+        <img src="https://cdn.lecollectionist.com/__lecollectionist__/production/houses/6499/photos/ftWKjxLQjmRqoZWuvKgY_451d5cba-e310-4b06-9e9c-2b72d6f1d189.jpg" class="object-cover absolute w-full h-full  duration-500 transition-all hover:scale-[1.02] z-[6]" alt="">
+        <div class="lg:max-w-screen-xl w-full mx-auto relative h-full"><button class="z-[7] font-inter absolute bottom-4 left-4 h-max w-max rounded-md bg-[#202020CC] px-4 py-3.5 text-sm text-white">
+            View all photos (29)
+          </button></div>
       </div>
       <!-- Heading -->
       <div class="mx-auto mb-12 flex w-full max-w-full justify-between border-b border-gray-200 px-4 pb-12 sm:px-6 lg:max-w-screen-xl">
@@ -212,7 +215,7 @@
               <a href="#" class="font-inter mb-2 text-sm text-[#4c4c4c]">Melides and surroundings</a>
 
               <div class="mx-auto my-6">
-                <iframe class="h-[500px] w-full lg:h-[300px]" src={{ asset('https://www.openstreetmap.org/export/embed.html?bbox=90.38615226745607%2C23.833598964091145%2C90.43065547943115%2C23.867275934131968&amp;layer=mapnik&amp;marker=23.85043854301341%2C90.4084038734436') }}></iframe>
+                <iframe class="h-[500px] w-full lg:h-[300px]" src="https://www.openstreetmap.org/export/embed.html?bbox=90.38615226745607%2C23.833598964091145%2C90.43065547943115%2C23.867275934131968&amp;layer=mapnik&amp;marker=23.85043854301341%2C90.4084038734436"></iframe>
               </div>
 
               <!-- Mobile div -->
@@ -360,7 +363,7 @@
             <!-- Slider part end -->
           </div>
         </div>
-        <div class="relative hidden h-max -translate-y-[40%] border bg-white p-6 lg:block lg:w-[40%] xl:w-[35%]">
+        <div class="relative hidden h-max -translate-y-[40%] z-[8] border bg-white p-6 lg:block lg:w-[40%] xl:w-[35%]">
           <h2 class="font-leitura mb-2 text-2xl font-semibold text-[#202020]">Villa Courela</h2>
           <p class="font-inter mb-8 text-base font-semibold text-[#202020]">From €5,995 to €12,495 per week</p>
           <p class="text-sm">Dates</p>
